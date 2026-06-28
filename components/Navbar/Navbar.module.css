@@ -1,0 +1,217 @@
+.navbar{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:92%;
+    max-width:1300px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 35px;
+
+    z-index:999;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.35s;
+}
+
+.scrolled{
+
+    top:10px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.logo span{
+
+    color:#00d4ff;
+
+}
+
+.menu{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:1rem;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#00d4ff;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#00d4ff;
+
+}
+
+.menu a:hover::after{
+
+    width:100%;
+
+}
+
+.cta{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(90deg,#00d4ff,#6a5cff);
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.cta:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,212,255,.35);
+
+}
+
+.mobile{
+
+    display:none;
+
+    font-size:1.7rem;
+
+    cursor:pointer;
+
+    color:white;
+
+}
+
+@media(max-width:900px){
+
+.menu{
+
+    position:absolute;
+
+    top:90px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#091522;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    gap:20px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+}
+
+.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.mobile{
+
+    display:block;
+
+}
+
+.cta{
+
+    display:none;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.logo{
+
+    font-size:1.6rem;
+
+}
+
+.navbar{
+
+    padding:15px 20px;
+
+}
+
+}

@@ -1,0 +1,205 @@
+/* =====================================================
+   TESTIMONIALS SECTION
+===================================================== */
+
+.testimonials{
+    position:relative;
+    padding:120px 8%;
+    overflow:hidden;
+}
+
+.container{
+    max-width:1350px;
+    margin:auto;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.heading{
+    max-width:750px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    color:#00d4ff;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.heading h2{
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.heading h2 span{
+
+    background:linear-gradient(
+        90deg,
+        #00d4ff,
+        #6a5cff,
+        #ffffff
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.heading p{
+
+    color:#cfd7df;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:30px;
+
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    padding:1px;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        135deg,
+        #00d4ff,
+        #6a5cff,
+        transparent
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.card:hover::before{
+
+    opacity:1;
+
+}
+
+.card:hover{
+
+    transform:
+        translateY(-12px)
+        rotateX(6deg);
+
+    box-shadow:
+        0 25px 45px rgba(0,212,255,.25);
+
+}
+
+/* =====================================================
+   QUOTE & STARS
+===================================================== */
+
+.quote{
+
+    font-size:2rem;
+
+    color:#00d4ff;
+
+    margin-bottom:20px;
+
+}
+
+.stars{
+
+    display:flex;
+
+    gap:6px;
+
+    color:#FFD43B;
+
+    margin-bottom:20px;
+
+}
+
+.review{
+
+    color:#d7dce5;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}

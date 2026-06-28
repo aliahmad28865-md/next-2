@@ -1,0 +1,568 @@
+/* ===================================================
+   DASHBOARD SECTION
+=================================================== */
+
+.dashboardSection{
+    padding:120px 8%;
+    position:relative;
+    overflow:hidden;
+}
+
+.container{
+    max-width:1350px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+/* ===================================================
+   LEFT SIDE
+=================================================== */
+
+.left h2{
+    font-size:3.2rem;
+    line-height:1.2;
+    margin:25px 0;
+}
+
+.left h2 span{
+    background:linear-gradient(
+        90deg,
+        #00d4ff,
+        #6a5cff,
+        #ffffff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.left p{
+    color:#cfd7df;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.tag{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    color:#00d4ff;
+
+    font-weight:600;
+
+}
+
+/* ===================================================
+   FEATURE LIST
+=================================================== */
+
+.list{
+    list-style:none;
+}
+
+.list li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+    font-size:1rem;
+
+}
+
+.list svg{
+
+    color:#00d4ff;
+
+}
+
+/* ===================================================
+   RIGHT SIDE
+=================================================== */
+
+.right{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ===================================================
+   MAIN DASHBOARD
+=================================================== */
+
+.dashboard{
+
+    width:100%;
+
+    max-width:560px;
+
+    border-radius:28px;
+
+    padding:22px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.35);
+
+    transition:.45s;
+
+}
+
+.dashboard:hover{
+
+    transform:
+    rotateY(-8deg)
+    rotateX(6deg)
+    translateY(-8px);
+
+}
+
+/* ===================================================
+   TOP BAR
+=================================================== */
+
+.topBar{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:22px;
+
+}
+
+.topBar span{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+}
+
+.topBar span:nth-child(1){
+
+background:#ff5f57;
+
+}
+
+.topBar span:nth-child(2){
+
+background:#febc2e;
+
+}
+
+.topBar span:nth-child(3){
+
+background:#28c840;
+
+}
+
+/* ===================================================
+   CONTENT GRID
+=================================================== */
+
+.content{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+}
+
+/* ===================================================
+   BIG CARD
+=================================================== */
+
+.bigCard{
+
+grid-column:span 2;
+
+padding:28px;
+
+border-radius:22px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.bigCard:hover{
+
+transform:translateY(-8px);
+
+}
+
+.bigCard svg{
+
+font-size:3rem;
+
+color:#00d4ff;
+
+margin-bottom:20px;
+
+}
+
+.bigCard h3{
+
+margin-bottom:10px;
+
+}
+
+.bigCard h1{
+
+font-size:3rem;
+
+margin-bottom:10px;
+
+color:#00d4ff;
+
+}
+
+.bigCard p{
+
+color:#cfd7df;
+
+}
+/* ==========================================
+   SMALL CARDS
+========================================== */
+
+.smallCard{
+
+    padding:24px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.smallCard:hover{
+
+    transform:
+    translateY(-8px)
+    scale(1.03);
+
+    box-shadow:
+    0 18px 35px rgba(0,212,255,.20);
+
+}
+
+.smallCard svg{
+
+    font-size:2rem;
+
+    color:#00d4ff;
+
+    margin-bottom:18px;
+
+}
+
+.smallCard h4{
+
+    color:#cfd7df;
+
+    margin-bottom:10px;
+
+    font-size:1rem;
+
+}
+
+.smallCard h2{
+
+    font-size:2rem;
+
+}
+
+/* ==========================================
+   SECURITY CARD
+========================================== */
+
+.bottomCard{
+
+    grid-column:span 2;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 28px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.bottomCard:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.bottomCard svg{
+
+    font-size:2rem;
+
+    color:#00d4ff;
+
+}
+
+.bottomCard div h3{
+
+    margin-bottom:5px;
+
+}
+
+.bottomCard div p{
+
+    color:#cfd7df;
+
+}
+
+/* ==========================================
+   STATUS INDICATOR
+========================================== */
+
+.green{
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:#22ff88;
+
+    box-shadow:
+        0 0 15px #22ff88,
+        0 0 35px #22ff88;
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.3);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================================
+   FLOATING LABELS
+========================================== */
+
+.floatOne,
+.floatTwo{
+
+    position:absolute;
+
+    padding:14px 24px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.25);
+
+    font-weight:600;
+
+}
+
+.floatOne{
+
+    top:35px;
+
+    right:-35px;
+
+}
+
+.floatTwo{
+
+    bottom:25px;
+
+    left:-40px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+.container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.list li{
+
+    justify-content:center;
+
+}
+
+.floatOne{
+
+    right:20px;
+
+}
+
+.floatTwo{
+
+    left:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.dashboardSection{
+
+    padding:90px 5%;
+
+}
+
+.left h2{
+
+    font-size:2.4rem;
+
+}
+
+.content{
+
+    grid-template-columns:1fr;
+
+}
+
+.bigCard{
+
+    grid-column:span 1;
+
+}
+
+.bottomCard{
+
+    grid-column:span 1;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    text-align:center;
+
+}
+
+.floatOne,
+.floatTwo{
+
+    display:none;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.left h2{
+
+    font-size:2rem;
+
+}
+
+.dashboard{
+
+    padding:16px;
+
+}
+
+.smallCard{
+
+    padding:18px;
+
+}
+
+.bigCard h1{
+
+    font-size:2.2rem;
+
+}
+
+}
